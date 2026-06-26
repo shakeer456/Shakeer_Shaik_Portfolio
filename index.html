@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shakeer Shaik — Data Analyst</title>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0/dist/index.global.js"
+    integrity="sha384-nWTzRTCY/9V4Bo352ehygr1c4cnst4XN6lMR3fipakEQrhVpc0hEM5Dii3Amz0sT"
+    crossorigin="anonymous"
+  ></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+  <script>
+    document.documentElement.classList.toggle(
+      'dark',
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    );
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased bg-[#efedea] text-neutral-800 dark:bg-neutral-950 dark:text-neutral-200">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-[#efedea]/80 dark:bg-neutral-950/80">
+    <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-semibold tracking-tight">
+        <span class="w-7 h-7 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 grid place-items-center text-xs font-bold">S</span>
+        <span class="hidden sm:inline">Shakeer</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[13px] text-neutral-500 dark:text-neutral-400">
+        <a href="#about" class="hover:text-neutral-900 dark:hover:text-white transition">About</a>
+        <a href="#work" class="hover:text-neutral-900 dark:hover:text-white transition">Work</a>
+        <a href="#experience" class="hover:text-neutral-900 dark:hover:text-white transition">Experience</a>
+        <a href="#education" class="hover:text-neutral-900 dark:hover:text-white transition">Education</a>
+      </div>
+      <a href="https://gumloop.com/artifacts/Xk7RXiYjzqd8teA2haQmj4?version_id=CoKzSkURsJurEAPv6ffPg5" target="_blank" rel="noopener" class="text-[13px] font-medium inline-flex items-center gap-1 hover:opacity-70 transition">
+        Download CV <span class="text-base">↓</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top" class="max-w-6xl mx-auto px-5 sm:px-8">
+
+    <!-- HERO -->
+    <section class="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-end pt-8 sm:pt-12 pb-16">
+      <div class="flex gap-6">
+        <!-- vertical label -->
+        <div class="hidden sm:flex flex-col justify-between py-2">
+          <span class="vertical-text text-[11px] tracking-widest uppercase text-neutral-400">Data Analyst</span>
+          <span class="text-[11px] text-neutral-400">2026</span>
+        </div>
+        <div class="flex-1">
+          <!-- stats -->
+          <div class="flex gap-10 mb-6">
+            <div>
+              <div class="text-2xl font-semibold">+10K</div>
+              <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-0.5">Records analyzed</div>
+            </div>
+            <div>
+              <div class="text-2xl font-semibold">+3</div>
+              <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-0.5">Live dashboards</div>
+            </div>
+            <div>
+              <div class="text-2xl font-semibold">30%</div>
+              <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-0.5">Faster reports</div>
+            </div>
+          </div>
+          <h1 class="serif text-7xl sm:text-8xl lg:text-9xl leading-[0.9] tracking-tight text-neutral-900 dark:text-white">Hello</h1>
+          <p class="mt-4 text-base text-neutral-500 dark:text-neutral-400">— It's Shakeer, a data analyst turning raw data into decisions.</p>
+          <a href="#about" class="inline-flex items-center gap-2 mt-10 text-[13px] text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition">
+            Scroll down <span>↓</span>
+          </a>
+        </div>
+      </div>
+      <!-- hero photo -->
+      <div class="w-full lg:w-[380px]">
+        <img src="assets/hero.jpg" alt="Shakeer Shaik" class="w-full rounded-2xl object-cover aspect-[4/5] grayscale">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 border-t border-neutral-300/60 dark:border-neutral-800">
+      <div class="grid lg:grid-cols-[1fr_1.1fr] gap-10 lg:gap-16">
+        <div>
+          <h2 class="serif text-4xl sm:text-5xl text-neutral-900 dark:text-white mb-5">About Me</h2>
+          <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-md">
+            I specialize in transforming raw data into clear, data-driven decisions through analytics, automation, and visualization. My work spans sales, customer, and finance analytics — building scalable dashboards and streamlining reporting. Ready to start your next data project?
+          </p>
+          <img src="assets/about2.jpg" alt="Shakeer" class="hidden sm:block mt-8 w-40 rounded-xl grayscale object-cover aspect-square">
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <!-- stat card -->
+          <div class="sm:col-span-2 rounded-2xl bg-white dark:bg-neutral-900 p-6 flex flex-col sm:flex-row gap-5 items-start">
+            <img src="assets/about.jpg" alt="Shakeer" class="w-28 rounded-xl grayscale object-cover aspect-[3/4]">
+            <div>
+              <div class="serif text-5xl text-neutral-900 dark:text-white">2×</div>
+              <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">higher churn detected in inactive customers — the core insight behind my retention models.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white dark:bg-neutral-900 p-5 flex gap-3">
+            <span class="w-6 h-6 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 grid place-items-center text-xs shrink-0">✓</span>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">2+ years across Software Engineering and Business Intelligence, delivering insights that drive real business decisions.</p>
+          </div>
+          <div class="rounded-2xl bg-white dark:bg-neutral-900 p-5 flex gap-3">
+            <span class="w-6 h-6 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 grid place-items-center text-xs shrink-0">✓</span>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">A business-first mindset with automation-focused thinking — simplifying complex data challenges into practical solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS strip -->
+    <section class="py-10 border-t border-neutral-300/60 dark:border-neutral-800">
+      <div class="flex flex-wrap gap-2" id="skills"></div>
+    </section>
+
+    <!-- WORK / PROJECTS -->
+    <section id="work" class="py-16 border-t border-neutral-300/60 dark:border-neutral-800">
+      <div class="flex items-center gap-2 text-sm text-neutral-500 mb-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span> Portfolio
+      </div>
+      <h2 class="serif text-4xl sm:text-5xl text-neutral-900 dark:text-white mb-10">Latest Works</h2>
+      <div id="projects-list" class="grid md:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-16 border-t border-neutral-300/60 dark:border-neutral-800">
+      <div class="flex items-center gap-2 text-sm text-neutral-500 mb-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span> Experience
+      </div>
+      <div class="grid lg:grid-cols-[auto_1fr] gap-6 lg:gap-16 mb-8">
+        <h2 class="serif text-4xl sm:text-5xl text-neutral-900 dark:text-white">Explore My<br>Journey</h2>
+        <p class="text-neutral-600 dark:text-neutral-400 max-w-md self-end">Over 2+ years I've worked across software engineering and business intelligence — collaborating with teams to ship dashboards and analytical solutions that move the needle.</p>
+      </div>
+      <div id="experience-list" class="divide-y divide-neutral-300/60 dark:divide-neutral-800"></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12">
+      <div class="rounded-3xl bg-neutral-900 dark:bg-neutral-900 text-white p-8 sm:p-14 relative overflow-hidden">
+        <div class="relative z-10 max-w-xl">
+          <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">Open to opportunities</p>
+          <h2 class="serif text-3xl sm:text-5xl leading-tight mb-3">Got data? Let's turn it into decisions.</h2>
+          <p class="text-neutral-400 mb-6">Currently open to Data Analyst roles — contributing through analytics, dashboard automation, and business intelligence.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://www.linkedin.com/in/shakeer-shaik" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-neutral-900 text-sm font-medium hover:bg-neutral-200 transition">Let's talk ↗</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shakeershaik489@gmail.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/30 text-white text-sm font-medium hover:bg-white/10 transition">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + CERTS -->
+    <section id="education" class="py-16 border-t border-neutral-300/60 dark:border-neutral-800 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="serif text-4xl text-neutral-900 dark:text-white mb-6">Education</h2>
+        <div id="education-list" class="space-y-4"></div>
+      </div>
+      <div>
+        <h2 class="serif text-4xl text-neutral-900 dark:text-white mb-6">Certifications</h2>
+        <div id="certs-list" class="space-y-3"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral-900 text-white mt-12">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-6 text-sm text-neutral-400">
+        <a href="#top" class="hover:text-white transition">Home</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#work" class="hover:text-white transition">Work</a>
+        <a href="https://www.linkedin.com/in/shakeer-shaik" target="_blank" rel="noopener" class="hover:text-white transition">LinkedIn</a>
+        <a href="https://github.com/shakeer456" target="_blank" rel="noopener" class="hover:text-white transition">GitHub</a>
+      </div>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shakeershaik489@gmail.com" target="_blank" rel="noopener" class="serif text-2xl sm:text-3xl hover:opacity-80 transition">shakeershaik489@gmail.com</a>
+    </div>
+    <div class="border-t border-neutral-800 py-4 text-center text-xs text-neutral-500">© <span id="year"></span> Shakeer Shaik · Data Analyst &amp; BI Developer</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
